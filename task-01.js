@@ -4,7 +4,7 @@ const Account = function ({login,email}) {
  this.email = email;
 }
 Account.prototype.getInfo = function() {
-    console.log(); 
+    console.log(`Login: ${this.login}, Email: ${this.email}`); 
 }
 console.log(Account.prototype.getInfo); // function
 
@@ -14,7 +14,7 @@ const mango = new Account({
 });
 
 mango.getInfo(); // Login: Mangozedog, Email: mango@dog.woof
-console.log(mango)
+// console.log(mango)
 
 const poly = new Account({
   login: 'Poly',
@@ -22,4 +22,4 @@ const poly = new Account({
 });
 
 poly.getInfo(); // Login: Poly, Email: poly@mail.com
-console.log(poly)
+// console.log(poly)
