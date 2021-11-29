@@ -14,6 +14,7 @@ const mango = new Account({
 });
 
 mango.getInfo(); // Login: Mangozedog, Email: mango@dog.woof
+console.log(mango)
 
 const poly = new Account({
   login: 'Poly',
@@ -21,3 +22,4 @@ const poly = new Account({
 });
 
 poly.getInfo(); // Login: Poly, Email: poly@mail.com
+console.log(poly)
